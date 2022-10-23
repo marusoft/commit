@@ -40,11 +40,11 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-.description h1 {
+.description-wrapper h1 {
   color: #29335c;
   font-size: 72px;
 }
-.description p {
+.description-wrapper p {
   color: #3e4462;
   font-weight: light;
   font-size: 20px;
@@ -56,44 +56,94 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .search-wrapper {
   display: flex;
+  align-items: center;
   padding: 8px 15px;
   background-color: #fff;
   border-radius: 8px;
+  position: relative;
 }
 .search-input {
-  padding: 10px;
-  width: 70%;
+  font-size: 20px;
+  padding: 8px;
+  width: 600px;
   border: none;
   outline: none;
   margin-left: 1rem;
 }
+::placeholder {
+  font-size: 20px;
+}
 .fa-search {
+  font-size: 20px;
   position: absolute;
-  bottom: 50px;
+  top: 16px;
 }
 .search-btn {
+  background: #f3663f;
+  color: #ffffff;
+  border-radius: 8px;
   margin-left: 0.7rem;
   padding: 15px;
+  border: none;
+  cursor: pointer;
 }
+.suggested-repo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.repo-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3e4462;
+}
+.repo-btns {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-item {
+  margin-right: 1rem;
+  padding: 8px 16px;
+  background: #29335c;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .description p {
     padding: 0.4rem 0rem;
+  }
+}
+@media (max-width: 920px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .btn-wrapper {
+    margin-top: 1rem;
+  }
+  .search-btn {
+    padding: 10px 30px;
+    max-width: 400;
   }
 }
 @media (max-width: 768px) {
   .search-container {
     flex-direction: column;
   }
-  .search-input {
-    width: 50%;
+  .search-wrapper {
+    max-width: 100%;
   }
-  .search-btn {
-    margin-top: 1rem;
-    width: 50%;
+  .search-input {
+    width: 100%;
   }
 }
 
@@ -106,5 +156,19 @@ body {
   }
   .description-wrapper h1 {
     font-size: 40px;
+  }
+  .description-wrapper p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 280px) {
+  .logo {
+    font-size: .8rem;
+  }
+  .nav {
+    font-size: 1.5rem;
+  }
+  .description-wrapper h1 {
+    font-size: 20px;
   }
 }
