@@ -52,7 +52,9 @@ body {
   line-height: 1.2;
 }
 .search-container {
-  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +70,8 @@ body {
 .search-input {
   font-size: 20px;
   padding: 8px;
-  width: 600px;
+  /* width: 600px; */
+  width: 100%;
   border: none;
   outline: none;
   margin-left: 1rem;
@@ -132,19 +135,19 @@ body {
   }
   .search-btn {
     padding: 10px 30px;
-    max-width: 400;
+    max-width: 400px;
   }
 }
 @media (max-width: 768px) {
   .search-container {
     flex-direction: column;
   }
-  .search-wrapper {
+  /* .search-wrapper {
     max-width: 100%;
   }
   .search-input {
     width: 100%;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
