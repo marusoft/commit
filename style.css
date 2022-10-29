@@ -52,35 +52,34 @@ body {
   line-height: 1.2;
 }
 .search-container {
-  width: 70%;
-  margin: 0 auto;
   padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.search-wrapper {
+form {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.search-wrapper {
+  min-width: 500px;
   padding: 8px 15px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   position: relative;
 }
 .search-input {
   font-size: 20px;
   padding: 8px;
-  /* width: 600px; */
   width: 100%;
   border: none;
   outline: none;
   margin-left: 1rem;
 }
-::placeholder {
-  font-size: 20px;
-}
 .fa-search {
-  font-size: 20px;
+  font-size: 1.2rem;
   position: absolute;
   top: 16px;
 }
@@ -89,7 +88,7 @@ body {
   color: #ffffff;
   border-radius: 8px;
   margin-left: 0.7rem;
-  padding: 15px;
+  padding: 14px 10px;
   border: none;
   cursor: pointer;
 }
@@ -113,11 +112,12 @@ body {
   gap: 1rem;
 }
 .btn-item {
+  font-size: 1.2rem;
   margin-right: 1rem;
-  padding: 8px 16px;
+  padding: 12px 20px;
   background: #29335c;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
 }
 
@@ -130,24 +130,22 @@ body {
   .search-container {
     flex-direction: column;
   }
-  .btn-wrapper {
-    margin-top: 1rem;
-  }
-  .search-btn {
-    padding: 10px 30px;
-    max-width: 400px;
-  }
 }
 @media (max-width: 768px) {
-  .search-container {
+  form {
     flex-direction: column;
   }
-  /* .search-wrapper {
-    max-width: 100%;
+  .search-wrapper {
+    margin-bottom: 0.9rem;
+    min-width: 100%;
   }
   .search-input {
     width: 100%;
-  } */
+  }
+  .search-btn{
+    width: 100%;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -164,14 +162,23 @@ body {
     font-size: 16px;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 290px) {
   .logo {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .nav {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .description-wrapper h1 {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .description-wrapper p {
+    font-size: 1rem;
+  }
+  ::placeholder{
+    font-size: 1rem;
+  }
+  .search-wrapper {
+    min-width: 100%;
   }
 }
