@@ -119,6 +119,7 @@ form {
   border-radius: 8px;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
